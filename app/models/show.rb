@@ -9,7 +9,7 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
   end 
 
   def self.lowest_rating
-    Show.order(:rating).first
+    Show.minimum(:rating)
   end 
   
 end 
