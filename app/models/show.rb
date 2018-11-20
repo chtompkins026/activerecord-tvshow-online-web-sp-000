@@ -8,7 +8,7 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
     Show.order(:rating).last
   end 
 
-  def self.most_popular_show 
+  def self.lowest_rating
     Show.order(:rating).first
   end 
   
