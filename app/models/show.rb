@@ -10,6 +10,7 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
 
   def self.lowest_rating
     Show.minimum(:rating)
+    #Show.order(:rating).first.rating 
   end 
   
 end 
