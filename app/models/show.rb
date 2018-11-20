@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
   end 
   
   def self.most_popular_show 
-    Show.where('rating')
+    Show.order(:rating).last
   end 
 
 
