@@ -13,7 +13,9 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
     #Show.order(:rating).first.rating 
   end 
   
-  def 
+  def least_popular_show
+   Show.order(:rating).first
+  end 
   
   
 end 
