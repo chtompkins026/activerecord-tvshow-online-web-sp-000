@@ -21,4 +21,8 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
     Show.sum(:rating)
   end 
 
+  def self.popular_shows 
+    Show.where('rating > 5')
+  end 
+
 end 
