@@ -1,6 +1,6 @@
 class CreateShows < ActiveRecord::Migration 
   
-  create_table(:shows) do |t| 
+  create_table(:shows) do |t|  
     t.string :name
     t.string :network 
     t.string :day 
@@ -9,3 +9,4 @@ class CreateShows < ActiveRecord::Migration
 end 
 
 #symbols are immutable and unique 
+#table names have to be plural and columns singular 
