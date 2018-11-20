@@ -25,4 +25,5 @@ class Show < ActiveRecord::Base  #allow us to mess around using SQL <> Ruby
     Show.where('rating > 5')
   end 
 
+  def self.
 end 
